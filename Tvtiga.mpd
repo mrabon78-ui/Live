@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd"
+     profiles="urn:mpeg:dash:profile:isoff-live:2011" 
+     type="dynamic" 
+     availabilityStartTime="2025-11-24T10:15:18Z" 
+     minimumUpdatePeriod="PT4.0S" 
+     minBufferTime="PT4.0S" 
+     publishTime="2025-12-29T13:34:54.867Z" 
+     timeShiftBufferDepth="PT60.0S" 
+     suggestedPresentationDelay="PT4.0S">
+
+    <BaseURL>https://ngtv-live-cbj.gcdn.co/Content/DASH/Live/channel(TV3)/master.mpd?hdntl=st=1790581044~exp=1790671044~acl=/Content/DASH/Live/channel(TV3)/*~id=uaxrx3ryL_G7iSUtbMu2WQ5FHl6XhJMtXohOxb5mXdE~hmac=e97479ce180ebf055719191eb70cb7cef97fcd45f3aa893a6e5fc0e2c771eb38</BaseURL>
+
+    <Period start="PT0S" id="1">
+        <AdaptationSet mimeType="video/mp4" 
+                       startWithSAP="1" 
+                       segmentAlignment="true" 
+                       par="16:9" 
+                       contentType="video">
+            
+            <SegmentTemplate timescale="10000000" 
+                             presentationTimeOffset="0" 
+                             media="$RepresentationID$_Segment-$Time$.m4v" 
+                             initialization="$RepresentationID$_init.m4i">
+                <SegmentTimeline>
+                    <S t="30359289682555" d="40000000" r="14" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+
+            <Representation id="1763979305893item-01item" bandwidth="500000" width="480" height="270" frameRate="25" codecs="avc1.428016" scanType="progressive" sar="1:1" />
+            <Representation id="1763979305893item-02item" bandwidth="1000000" width="640" height="360" frameRate="25" codecs="avc1.4d4020" scanType="progressive" sar="1:1" />
+            <Representation id="1763979305893item-03item" bandwidth="2000000" width="960" height="540" frameRate="25" codecs="avc1.4d4029" scanType="progressive" sar="1:1" />
+            <Representation id="1763979305893item-04item" bandwidth="3000000" width="1280" height="720" frameRate="25" codecs="avc1.640029" scanType="progressive" sar="1:1" />
+            <Representation id="1763979305893item-05item" bandwidth="4000000" width="1920" height="1080" frameRate="25" codecs="avc1.64002a" scanType="progressive" sar="1:1" />
+        </AdaptationSet>
+
+        <AdaptationSet mimeType="audio/mp4" 
+                       startWithSAP="1" 
+                       lang="may" 
+                       segmentAlignment="true" 
+                       contentType="audio">
+            
+            <SegmentTemplate timescale="10000000" 
+                             presentationTimeOffset="0" 
+                             media="$RepresentationID$_Segment-$Time$.m4a" 
+                             initialization="$RepresentationID$_init.m4i">
+                <SegmentTimeline>
+                    <S t="30359289908777" d="40106667" />
+                    <S t="30359330015444" d="39680000" />
+                    <S t="30359369695444" d="40106667" />
+                    <S t="30359409802111" d="40106666" />
+                    <S t="30359449908777" d="40106667" />
+                    <S t="30359490015444" d="39680000" />
+                    <S t="30359529695444" d="40106667" />
+                    <S t="30359569802111" d="40106666" />
+                    <S t="30359609908777" d="40106667" />
+                    <S t="30359650015444" d="39680000" />
+                    <S t="30359689695444" d="40106667" />
+                    <S t="30359729802111" d="40106666" />
+                    <S t="30359769908777" d="40106667" />
+                    <S t="30359810015444" d="39680000" />
+                    <S t="30359849695444" d="40106667" />
+                </SegmentTimeline>
+            </SegmentTemplate>
+            
+            <Representation id="1763979305893item-06item" bandwidth="64000" audioSamplingRate="48000" codecs="mp4a.40.2" />
+        </AdaptationSet>
+    </Period>
+</MPD>
